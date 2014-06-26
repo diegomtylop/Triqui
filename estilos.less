@@ -1,0 +1,116 @@
+@fondo-tablero:rgb(200,200,200);
+body{
+	font-size: 14px;
+}
+/*Contenedor princiapl*/
+#mainContainter{
+	max-width: 1250px;
+	width:80%;
+	margin: auto;
+	border:1px solid black;
+    background:rgb(250,250,250);
+}
+
+#cont-tablero{
+	width: 600px;
+	/*height: 900px;*/
+	border: orange 1px dotted;
+	margin: auto;
+	background:@fondo-tablero;
+}
+
+.capa{
+	margin: auto;
+	/*border:1px solid green;*/
+        outline:1px dashed green;
+	padding: 100px;
+}
+
+#capa1{
+	
+}
+#capa2{
+
+}
+#capa3{
+
+}
+
+#interior{
+	background: red;
+	/*width:10em;*/
+	height: 100px;
+}
+#fichas{
+	padding: 0px;
+	width: 100%;
+	/*border: 2px dashed red;*/
+        outline: 2px dashed red;
+        position:relative;
+}
+.ficha{
+	width: 35px;
+	height: 35px;
+	border: 5px solid white;
+	border-radius: 22px;
+	position: absolute;
+	float:left;
+}
+
+/**Primera fila*/
+.ficha-0-0-0{
+	top:0px;
+	left:0px;
+}
+
+/*Prueba less*/
+
+.loop(@counter) when (@counter > 3) {
+  .loop((@counter - 1));    // next iteration
+  width: (10px * @counter); // code for each iteration
+}
+
+div .prueba{
+	.loop(6);
+}
+
+
+@maxz:2;
+@contz:0;
+
+@ancho:600px;
+
+/*Inicio z*/
+.cicloz( @contz; @maxz);
+
+.cicloz( @contadorz; @limitez) when ( @contadorz <= @limitez){
+	
+	/*Inicio y*/
+	@maxy:2;
+	@conty:0;
+	.cicloy( @conty; @maxy);
+
+	.cicloy( @contadory; @limitey) when ( @contadory <= @limitey){
+
+		@maxx:2;
+		/*Inicio X*/
+		@contx:0;
+		
+		.ciclox(@contx, @maxx);
+		
+		.ciclox( @contadorx; @limitex) when ( @contadorx <= @limitex){
+			
+			
+			.ficha-@{contadorx}-@{contadory}-@{contadorz}{
+				top:(@contadorx)*330px+(@contadorz)*20;
+				left:(@contadory)*277px+(@contadorz)*20;
+				background:rgb(@contadorx*50,@contadory*50, @contadorz*50);
+			}
+			.ciclox(@contadorx + 1, @limitex);
+		}
+		
+		.cicloy(@contadory + 1, @limitey);
+	}
+	
+	.cicloz(@contadorz+1; @limitez);
+}

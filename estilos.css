@@ -1,0 +1,89 @@
+body{
+	font-size: 14px;
+}
+/*Contenedor princiapl*/
+#mainContainter{
+	max-width: 1250px;
+	width:80%;
+	margin: auto;
+	border:1px solid black;
+    background:rgb(250,250,250);
+}
+
+#cont-tablero{
+	width: 600px;
+	/*height: 900px;*/
+	border: orange 1px dotted;
+	margin: auto;
+	background:rgb(200,200,200);
+}
+
+.capa{
+	margin: auto;
+	/*border:1px solid green;*/
+        outline:1px dashed green;
+	padding: 100px;
+}
+
+#capa1{
+	
+}
+#capa2{
+
+}
+#capa3{
+
+}
+
+#interior{
+	background: red;
+	/*width:10em;*/
+	height: 100px;
+}
+#fichas{
+	padding: 0px;
+	width: 100%;
+	/*border: 2px dashed red;*/
+        outline: 2px dashed red;
+        position:relative;
+}
+.ficha{
+	width: 35px;
+	height: 35px;
+	border: 5px solid white;
+	border-radius: 22px;
+	position: absolute;
+	float:left;
+}
+
+/**Primera fila*/
+.ficha-0-0-0{
+	top:0px;
+	left:0px;
+}
+
+.ficha-0-0-1{
+	top:0px;
+	left:300px;
+}
+
+.ficha-0-0-2{
+	top:0px;
+	left:600px;
+}
+
+/*Segunda fila*/
+.ficha-1-0-0{
+	top:200px;
+	left:200px;
+}
+
+.ficha-1-0-1{
+	top:200px;
+	left:300px;
+}
+
+.ficha-1-0-2{
+	top:200px;
+	left:600px;
+}

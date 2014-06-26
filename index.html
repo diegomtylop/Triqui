@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link href="estilos.css" rel="stylesheet" type="text/css"></link>
+		<link href="prueba.css" rel="stylesheet" type="text/css"></link>
+        
+        <title>Titulo de prueba</title>
+    </head>
+    <body>
+        <div id="mainContainter">
+            <section>
+                <h1>Juego de triqui que me ense&ntilde;o mi abuelo</h1>
+            </section>
+
+            <section>
+                <select name="pos1" id="pos1">
+                    <option value="0">
+                        0
+                    </option>
+                    <option value="1">
+                        1
+                    </option>
+                    <option value="2">
+                        2
+                    </option>
+                </select>
+
+                <select name="pos2" id="pos2">
+                    <option value="0">
+                        0
+                    </option>
+                    <option value="1">
+                        1
+                    </option>
+                    <option value="2">
+                        2
+                    </option>
+                </select>
+
+                <select name="pos3" id="pos3">
+                    <option value="0">
+                        0
+                    </option>
+                    <option value="1">
+                        1
+                    </option>
+                    <option value="2">
+                        2
+                    </option>
+                </select>
+                <button onclick="clickAdicionar()">A&ntilde;adir ficha</button>
+            </section>
+
+            <div id="cont-tablero">
+                <div id="fichas">
+                </div>
+                <div id="capa1" class="capa">
+                    <div id="capa2" class="capa">
+                        <div id="capa3" class="capa">
+                            <div id="interior">
+                            </div>
+                    
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+          <!--Cargado al final para mejorar el rendimiento-->
+          <script type="text/javascript" src="controlador.js"></script>
+		  <script>
+			llenarTablero();
+		  </script>
+    </body>
+</html>

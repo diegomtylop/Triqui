@@ -1,0 +1,203 @@
+body {
+  font-size: 14px;
+}
+/*Contenedor princiapl*/
+#mainContainter {
+  max-width: 1250px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  background: #fafafa;
+}
+#cont-tablero {
+  width: 600px;
+  /*height: 900px;*/
+  border: orange 1px dotted;
+  margin: auto;
+  background: #c8c8c8;
+}
+.capa {
+  margin: auto;
+  /*border:1px solid green;*/
+  outline: 1px dashed green;
+  padding: 100px;
+}
+#interior {
+  background: red;
+  /*width:10em;*/
+  height: 100px;
+}
+#fichas {
+  padding: 0px;
+  width: 100%;
+  /*border: 2px dashed red;*/
+  outline: 2px dashed red;
+  position: relative;
+}
+.ficha {
+  width: 35px;
+  height: 35px;
+  border: 5px solid white;
+  border-radius: 22px;
+  position: absolute;
+  float: left;
+}
+/**Primera fila*/
+.ficha-0-0-0 {
+  top: 0px;
+  left: 0px;
+}
+/*Prueba less*/
+div .prueba {
+  width: 40px;
+  width: 50px;
+  width: 60px;
+}
+/*Inicio z*/
+/*Inicio y*/
+/*Inicio X*/
+.ficha-0-0-0 {
+  top: 0px;
+  left: 0px;
+  background: #000000;
+}
+.ficha-1-0-0 {
+  top: 330px;
+  left: 0px;
+  background: #320000;
+}
+.ficha-2-0-0 {
+  top: 660px;
+  left: 0px;
+  background: #640000;
+}
+/*Inicio X*/
+.ficha-0-1-0 {
+  top: 0px;
+  left: 277px;
+  background: #003200;
+}
+.ficha-1-1-0 {
+  top: 330px;
+  left: 277px;
+  background: #323200;
+}
+.ficha-2-1-0 {
+  top: 660px;
+  left: 277px;
+  background: #643200;
+}
+/*Inicio X*/
+.ficha-0-2-0 {
+  top: 0px;
+  left: 554px;
+  background: #006400;
+}
+.ficha-1-2-0 {
+  top: 330px;
+  left: 554px;
+  background: #326400;
+}
+.ficha-2-2-0 {
+  top: 660px;
+  left: 554px;
+  background: #646400;
+}
+/*Inicio y*/
+/*Inicio X*/
+.ficha-0-0-1 {
+  top: 20px;
+  left: 20px;
+  background: #000032;
+}
+.ficha-1-0-1 {
+  top: 350px;
+  left: 20px;
+  background: #320032;
+}
+.ficha-2-0-1 {
+  top: 680px;
+  left: 20px;
+  background: #640032;
+}
+/*Inicio X*/
+.ficha-0-1-1 {
+  top: 20px;
+  left: 297px;
+  background: #003232;
+}
+.ficha-1-1-1 {
+  top: 350px;
+  left: 297px;
+  background: #323232;
+}
+.ficha-2-1-1 {
+  top: 680px;
+  left: 297px;
+  background: #643232;
+}
+/*Inicio X*/
+.ficha-0-2-1 {
+  top: 20px;
+  left: 574px;
+  background: #006432;
+}
+.ficha-1-2-1 {
+  top: 350px;
+  left: 574px;
+  background: #326432;
+}
+.ficha-2-2-1 {
+  top: 680px;
+  left: 574px;
+  background: #646432;
+}
+/*Inicio y*/
+/*Inicio X*/
+.ficha-0-0-2 {
+  top: 40px;
+  left: 40px;
+  background: #000064;
+}
+.ficha-1-0-2 {
+  top: 370px;
+  left: 40px;
+  background: #320064;
+}
+.ficha-2-0-2 {
+  top: 700px;
+  left: 40px;
+  background: #640064;
+}
+/*Inicio X*/
+.ficha-0-1-2 {
+  top: 40px;
+  left: 317px;
+  background: #003264;
+}
+.ficha-1-1-2 {
+  top: 370px;
+  left: 317px;
+  background: #323264;
+}
+.ficha-2-1-2 {
+  top: 700px;
+  left: 317px;
+  background: #643264;
+}
+/*Inicio X*/
+.ficha-0-2-2 {
+  top: 40px;
+  left: 594px;
+  background: #006464;
+}
+.ficha-1-2-2 {
+  top: 370px;
+  left: 594px;
+  background: #326464;
+}
+.ficha-2-2-2 {
+  top: 700px;
+  left: 594px;
+  background: #646464;
+}
